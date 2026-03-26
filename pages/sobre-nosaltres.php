@@ -1,0 +1,133 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosaltres - BCN SOLIDÀRIA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/sobre-nosaltres.css">
+</head>
+<body class="fade-in">
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="../index.php" class="logo">
+                <div class="logo-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                </div>
+                <span>BCN SOLIDÀRIA</span>
+            </a>
+            <nav class="main-nav">
+    <ul>
+    <li><a href="/index.php">Inici</a></li>
+    <li><a href="/pages/projectes.php">Projectes</a></li>
+    <li><a href="/pages/sobre-nosaltres.php">Sobre Nosaltres</a></li>
+</ul>
+
+<?php if (isset($_SESSION['usuario'])): ?>
+    <div class="user-menu">
+        <span>Hola, <?php echo $_SESSION['usuario']; ?></span>
+        <a>|</a>
+        <a href="/pages/mis_donaciones.php" class="mis-donaciones-link">
+            Mis donacions
+        </a>
+        <a>|</a>
+        <a href="/logout.php" class="btn-join">Tancar sessió</a>
+    </div>
+<?php else: ?>
+    <a href="/pages/login.php">Iniciar sessió</a>
+    <a href="/pages/uneix-te.php" class="btn-join">Uneix-te</a>
+<?php endif; ?>
+</nav>
+        </div>
+    </header>
+
+    <div id="page-wrapper" class="fade-wrapper">
+        <main>
+        <!-- Secció Història -->
+        <section class="about-hero">
+            <div class="about-content">
+                <div class="badge">LA NOSTRA HISTÒRIA</div>
+                <h1 class="about-title">
+                    Construint una Barcelona <br>
+                    <span class="italic-serif">més humana.</span>
+                </h1>
+                
+                <div class="about-text">
+                    <p>Som una organització creada el 2026 amb un propòsit clar: ajudar les persones més vulnerables de Barcelona i contribuir a construir una societat més justa i solidària.</p>
+                    <p>Aquest projecte neix d'una idea senzilla però poderosa: quan la tecnologia es posa al servei de les persones, pot convertir-se en una eina capaç de generar un impacte real.</p>
+                </div>
+            </div>
+
+            <div class="about-image-container">
+                <div class="rotated-image-wrapper">
+                    <img src="https://static.que.es/wp-content/uploads/2021/10/Que-es-el-comedor-comunitario-2.jpg" alt="Solidaritat i suport mutu" class="about-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Secció Compromís -->
+        <section class="commitment-section">
+            <div class="commitment-card">
+                <h2 class="commitment-title">El nostre compromís</h2>
+                <p class="commitment-subtitle">A Barcelona existeixen moltes realitats invisibles. El nostre objectiu és canalitzar l'ajuda de forma organitzada, segura i transparent.</p>
+                
+                <div class="commitment-grid">
+                    <div class="value-card">
+                        <div class="icon-box red"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></div>
+                        <h3>Solidaritat</h3>
+                        <p>Creiem en el poder de l'ajuda col·lectiva per transformar realitats.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="icon-box green"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                        <h3>Transparència</h3>
+                        <p>Cada donació mereix la màxima confiança i responsabilitat.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="icon-box blue"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+                        <h3>Compromís Social</h3>
+                        <p>Enfocats en les necessitats reals de la nostra comunitat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secció Cita -->
+        <section class="quote-section">
+            <p class="quote-text">"Més que una plataforma tecnològica, som un pont entre persones. Un espai on l'empatia es transforma en acció."</p>
+            <div class="quote-footer">
+                <span class="small-label">PERQUÈ AJUDAR NO HAURIA DE SER COMPLICAT.</span>
+                <h3>I perquè cada petita ajuda compta.</h3>
+                <a href="uneix-te.html" class="btn-primary dark">Comença a ayudar avui</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <div class="logo-icon-small">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                </div>
+                <span>BCN SOLIDÀRIA</span>
+            </div>
+            <div class="footer-links">
+                <a href="#">PRIVADESA</a>
+                <a href="#">TERMES</a>
+                <a href="#">CONTACTE</a>
+            </div>
+            <div class="footer-copy">
+                &copy; 2026 Barcelona Solidària. Tots els drets reservats.
+            </div>
+        </div>
+    </footer>
+
+    </div> <!-- Fi page-wrapper -->
+
+    <script src="../js/transitions.js"></script>
+</body>
+</html>

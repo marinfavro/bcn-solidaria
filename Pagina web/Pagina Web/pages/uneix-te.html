@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uneix-te - BCN SOLIDÀRIA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body class="bg-light">
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <div class="logo-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                </div>
+                <span>BCN SOLIDÀRIA</span>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Inici</a></li>
+                    <li><a href="projectes.html">Projectes</a></li>
+                    <li><a href="sobre-nosaltres.html">Sobre Nosaltres</a></li>
+                </ul>
+                <a href="uneix-te.html" class="btn-join">Uneix-te</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="auth-container">
+        <div class="auth-card scale-wrapper is-visible">
+            <h1 class="auth-title">Crea el teu compte</h1>
+            <p class="auth-subtitle">Uneix-te a la xarxa solidària de Barcelona.</p>
+
+            <form class="auth-form">
+                <div class="form-group">
+                    <label for="name">NOM COMPLET</label>
+                    <div class="input-wrapper">
+                        <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        <input type="text" id="name" placeholder="Jordi Vila">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">CORREU ELECTRÒNIC</label>
+                    <div class="input-wrapper">
+                        <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <input type="email" id="email" placeholder="jordi@exemple.cat">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">CONTRASENYA</label>
+                    <div class="input-wrapper">
+                        <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                        <input type="password" id="password" placeholder="••••••••">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-auth">Registrar-se</button>
+            </form>
+
+            <div class="auth-divider">
+                <span>o</span>
+            </div>
+
+            <div class="auth-footer-link">
+                <a href="index.html">Tornar a l'inici</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <div class="logo-icon-small">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                </div>
+                <span>BCN SOLIDÀRIA</span>
+            </div>
+            <div class="footer-links">
+                <a href="#">PRIVADESA</a>
+                <a href="#">TERMES</a>
+                <a href="#">CONTACTE</a>
+            </div>
+            <div class="footer-copy">
+                &copy; 2026 Barcelona Solidària. Tots els drets reservats.
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/transitions.js"></script>
+</body>
+</html>

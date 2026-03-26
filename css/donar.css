@@ -1,0 +1,255 @@
+/* RESET BÁSICO */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #fff;
+    color: #1a1a1a;
+}
+
+/* =========================
+   HEADER (igual que index)
+========================= */
+
+.site-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 5%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #eee;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+
+.logo-icon {
+    background: #000;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 50px; 
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+.btn-join {
+    background: #000;
+    color: #fff !important;
+    padding: 8px 18px;
+    border-radius: 10px;
+}
+
+/* =========================
+   CONTENIDO
+========================= */
+
+.container {
+    max-width: 900px;
+    margin: 120px auto 80px auto; /* espacio para header */
+    padding: 0 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.auth-title {
+    text-align: center;
+}
+
+/* TARJETA */
+.auth-card {
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 40px;
+    background: #fff;
+}
+
+/* BOTÓN VOLVER */
+.btn-back {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+/* FORMULARIO */
+form {
+    margin-top: 30px;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+/* =========================
+   DROP AREA
+========================= */
+
+#drop-area {
+    border: 2px dashed #ccc;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#drop-area:hover {
+    border-color: #000;
+}
+
+/* =========================
+   PREVIEW INSTAGRAM STYLE
+========================= */
+
+#preview-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+#preview {
+    display: none;
+    max-width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* BOTÓN BORRAR (ENCIMA DE LA IMAGEN) */
+#removeBtn {
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    border-radius: 50%;
+
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#removeBtn:hover {
+    background: rgba(0,0,0,0.8);
+}
+
+/* =========================
+   CAMPOS DINÁMICOS
+========================= */
+
+#bizumFields,
+#tarjetaFields,
+#transferenciaFields {
+    margin-top: 15px;
+}
+
+/* =========================
+   BOTÓN PRINCIPAL
+========================= */
+
+.btn-primary {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+
+/* BOTÓN DONAR GRANDE CENTRADO */
+.btn-donar {
+    display: block;
+    margin: 40px auto 0 auto;
+    font-size: 18px;
+    padding: 16px 40px;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+    .main-nav ul {
+        display: none;
+    }
+
+    .container {
+        margin-top: 100px;
+    }
+}

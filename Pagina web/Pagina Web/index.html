@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCN SOLIDÀRIA - Fem pinya per Barcelona</title>
+    <!-- Fonts: Inter para sans-serif y Playfair Display para el toque editorial -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Pagina web/Pagina Web/css/estilos.css">>
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                </div>
+                <span>BCN SOLIDÀRIA</span>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Inici</a></li>
+                    <li><a href="pages/projectes.html">Projectes</a></li>
+                    <li><a href="pages/sobre-nosaltres.html">Sobre Nosaltres</a></li>
+                </ul>
+                <a href="pages/uneix-te.html" class="btn-join">Uneix-te</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="page-wrapper" class="fade-wrapper">
+        <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="badge">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    IMPACTE A BARCELONA
+                </div>
+                
+                <h1 class="hero-title">
+                    Fem pinya per <br>
+                    <span class="italic-serif">Barcelona.</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Ajuda'ns a combatre la precarietat a la nostra ciutat. 
+                    Pots donar aliments o fer una aportació econòmica 
+                    per als qui més ho necessiten.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="pages/uneix-te.html" class="btn-primary">Comença Ara &rarr;</a>
+                    <a href="pages/uneix-te.html" class="btn-outline">Donar Diners</a>
+                    <a href="pages/uneix-te.html" class="btn-outline btn-food">Donar Menjar</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">13.526€</span>
+                        <span class="stat-label">RECAPTAT</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">126</span>
+                        <span class="stat-label">VOLUNTARIS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image-container">
+                <div class="relative-container">
+                    <div class="main-image-card">
+                        <img 
+                          src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=2070&auto=format&fit=crop" 
+                          alt="Solidaritat Barcelona"
+                          class="hero-img"
+                          referrerpolicy="no-referrer"
+                        />
+                    </div>
+                    
+                    <!-- Cartel flotante (Glass Card) -->
+                    <div class="glass-card">
+                        <div class="avatar-group">
+                            <div class="avatar-item"><img src="https://i.pravatar.cc/150?u=bcn1" alt="usuari"></div>
+                            <div class="avatar-item"><img src="https://i.pravatar.cc/150?u=bcn2" alt="usuari"></div>
+                            <div class="avatar-item"><img src="https://i.pravatar.cc/150?u=bcn3" alt="usuari"></div>
+                            <div class="avatar-item"><img src="https://i.pravatar.cc/150?u=bcn4" alt="usuari"></div>
+                        </div>
+                        <p class="card-text">Més de 50 quilos de menjar recollits aquesta setmana a l'Eixample.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mapa Section -->
+        <section id="mapa" class="map-section">
+            <div class="section-header text-center">
+                <h2 class="section-title">Mapa de Solidaritat</h2>
+                <p class="section-subtitle">Identifiquem les zones amb més necessitat de Barcelona. Els punts vermells indiquen llocs on la fam és més present i on pots deixar les teves donacions d'aliments.</p>
+            </div>
+
+            <div class="map-glass-card">
+                <div class="map-grid">
+                    <!-- Columna Mapa -->
+                    <div class="map-visual-container">
+                        <div class="map-wrapper">
+                            <div class="map-image-clip">
+                                <img 
+                                    src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Mapa_Barris_Barcelona.jpg" 
+                                    alt="Mapa Barcelona"
+                                    class="map-base-img"
+                                    referrerPolicy="no-referrer"
+                                />
+                            </div>
+                            <!-- Punts Interactius (Generats per JS) -->
+                            <div id="map-points"></div>
+                        </div>
+                    </div>
+
+                    <!-- Columna Info -->
+                    <div class="map-info-container">
+                        <h3 class="info-title">Com funciona?</h3>
+                        <p class="info-desc">Hem mapejat els barris de Barcelona on la inseguretat alimentària és més crítica. Pots apropar-te a qualsevol dels punts marcats per dipositar aliments no pereceders.</p>
+                        
+                        <div class="info-cards">
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                </div>
+                                <div class="info-text">
+                                    <h4>Punts Verificats</h4>
+                                    <p>Tots els punts són gestionats per entitats locals de confiança.</p>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </div>
+                                <div class="info-text">
+                                    <h4>Recollida Diària</h4>
+                                    <p>Els aliments es distribueixen el mateix dia per garantir la frescor.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="pages/uneix-te.html" class="btn-map-action">
+                            <span>Vull donar a un punt de recollida</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <div class="logo-icon-small">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                </div>
+                <span>BCN SOLIDÀRIA</span>
+            </div>
+            <div class="footer-links">
+                <a href="#">PRIVADESA</a>
+                <a href="#">TERMES</a>
+                <a href="#">CONTACTE</a>
+            </div>
+            <div class="footer-copy">
+                &copy; 2026 Barcelona Solidària. Tots els drets reservats.
+            </div>
+        </div>
+    </footer>
+
+    </div> <!-- Fi page-wrapper -->
+
+    <script src="js/transitions.js"></script>
+    <script src="js/mapa.js"></script>
+</body>
+</html>
