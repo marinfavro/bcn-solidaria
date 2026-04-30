@@ -1,20 +1,29 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# BCN Solidària ❤️
+**Plataforma digital para la gestión y optimización de donaciones en la ciudad de Barcelona.**
 
-# Run and deploy your AI Studio app
+Este proyecto nace de la necesidad de conectar a ciudadanos dispuestos a ayudar con puntos de recogida de alimentos y recursos económicos en zonas vulnerables. Se ha desarrollado como Proyecto Final del Ciclo Formativo de Grado Superior en Administración de Sistemas Informáticos en Red (ASIX).
 
-This contains everything you need to run your app locally.
+## 🛠️ Tecnologías utilizadas (Stack LAMP)
+*   **S.O.:** Ubuntu Server 22.04.5 LTS virtualizado en Oracle VirtualBox.
+*   **Servidor Web:** Apache HTTP Server.
+*   **Base de Datos:** MariaDB (Gestión relacional de usuarios y donaciones).
+*   **Backend:** PHP para la lógica de negocio y gestión de sesiones.
+*   **Frontend:** HTML5, CSS3 y JavaScript para validaciones dinámicas.
 
-View your app in AI Studio: https://ai.studio/apps/bc62419c-081f-4a0c-8dfd-840bd56a935d
+## 🔐 Seguridad e Infraestructura
+*   **Protección de Datos:** Almacenamiento de contraseñas mediante algoritmo **BCRYPT**.
+*   **Seguridad SQL:** Uso sistemático de **Consultas Preparadas (Prepared Statements)** para evitar Inyección SQL.
+*   **Firewall:** Configuración restrictiva mediante **UFW** (puertos 22, 80, 443).
+*   **Administración:** Acceso remoto seguro mediante protocolo **SSH**.
+*   **Backups:** Sistema automatizado de copias de seguridad mediante scripts en Bash y compresión Gzip.
 
-## Run Locally
+## 🚀 Funcionalidades principales
+*   Registro e inicio de sesión de usuarios.
+*   Gestión de donaciones económicas (Bizum, Tarjeta, Transferencia).
+*   Sistema de donación de alimentos con subida de imágenes.
+*   Mapa interactivo de puntos de recogida en Barcelona.
+*   Validación de entregas físicas mediante escaneo de códigos **QR**.
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 📂 Repositorio
+*   **Autor:** Marín Favro Velo Aló
+*   **Centro:** Ilerna (Convocatoria Mayo 2026)
