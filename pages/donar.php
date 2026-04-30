@@ -52,8 +52,8 @@ if (!isset($_SESSION['usuario'])) {
         <label>Què vols donar?</label>
         <select id="tipo">
             <option value="">Selecciona</option>
-            <option value="dinero">Dinero</option>
-            <option value="comida">Comida</option>
+            <option value="dinero">Diners</option>
+            <option value="comida">Menjar</option>
         </select>
     </div>
 
@@ -65,7 +65,7 @@ if (!isset($_SESSION['usuario'])) {
         <select name="metodo" id="metodoPago" required>
             <option value="">Selecciona</option>
             <option value="bizum">Bizum</option>
-            <option value="tarjeta">Tarjeta</option>
+            <option value="tarjeta">Targeta</option>
             <option value="transferencia">Transferencia</option>
         </select>
 
