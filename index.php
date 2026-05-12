@@ -16,9 +16,8 @@ $total = floatval($fila['total']);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BCN SOLIDÀRIA - Fem pinya per Barcelona</title>
-    <!-- Fonts: Inter para sans-serif y Playfair Display para el toque editorial -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Pagina web/Pagina Web/css/estilos.css">
+    <link rel="stylesheet" href="/css/estilos.css">
 </head>
 <body>
     <!-- Header -->
