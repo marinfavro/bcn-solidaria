@@ -102,7 +102,11 @@ session_start();
             <div class="quote-footer">
                 <span class="small-label">PERQUÈ AJUDAR NO HAURIA DE SER COMPLICAT.</span>
                 <h3>I perquè cada petita ajuda compta.</h3>
-                <a href="uneix-te.html" class="btn-primary dark">Comença a ayudar avui</a>
+                <?php if (!isset($_SESSION['usuario_id'])): ?>
+                    <a href="uneix-te.php" class="btn-primary dark">Comença a ayudar avui</a>
+                <?php else: ?>
+                    <a href="donar.php" class="btn-primary dark">Fer una donació ara</a>
+                <?php endif; ?>
             </div>
         </section>
     </main>

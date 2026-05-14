@@ -66,19 +66,19 @@ if (!isset($_SESSION['usuario'])) {
             <option value="">Selecciona</option>
             <option value="bizum">Bizum</option>
             <option value="tarjeta">Targeta</option>
-            <option value="transferencia">Transferencia</option>
+            <option value="transferencia">Transfèrencia</option>
         </select>
 
         <div id="bizumFields" class="hidden">
-            <label>Número de teléfono</label>
+            <label>Número de telèfon</label>
             <input type="text" name="telefono">
         </div>
 
         <div id="tarjetaFields" class="hidden">
-            <label>Número de tarjeta</label>
+            <label>Número de targeta</label>
             <input type="text" name="tarjeta_numero" id="tarjeta" placeholder="1234 5678 9012 3456">
 
-            <label>Fecha de caducidad</label>
+            <label>Data de caducitat</label>
                             <input 
                     type="text" 
                     id="caducidad" 
@@ -97,7 +97,7 @@ if (!isset($_SESSION['usuario'])) {
             <label>IBAN</label>
             <input type="text" name="iban" id="iban" placeholder="ES00 1234 1234 1234 1234 1234">
 
-            <label>Nombre del titular</label>
+            <label>Nom del titular</label>
             <input type="text" name="titular">
         </div>
 
